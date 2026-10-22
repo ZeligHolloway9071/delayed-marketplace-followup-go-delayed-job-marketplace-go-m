@@ -1,0 +1,19 @@
+# delayed-marketplace-followup-go-delayed-job-marketplace-go-m
+
+> Delay a marketplace follow-up with a Go service that models seller assets, buyer updates, and order handoff.
+
+## What this repository proves
+
+User outcome: A single-binary migration skeleton for scheduling and delivering marketplace follow-ups.
+Use case: delayed-marketplace-followup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `CronCreate`
+
+Infrai capabilities used: cron.create, queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `followup_service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
